@@ -21,10 +21,10 @@ PRODUCT_PACKAGES += \
     rockchip.hardware.neuralnetworks@1.0-impl \
     rockchip.hardware.neuralnetworks@1.0-service
 
-$(call inherit-product-if-exists, vendor/rockchip/common/npu/npu.mk)
+$(call inherit-product-if-exists, vendor/hardkernel/common/npu/npu.mk)
 
-BOARD_SEPOLICY_DIRS += device/rockchip/rk356x/sepolicy_vendor
-TARGET_SYSTEM_PROP += device/rockchip/rk356x/rk356x.prop
+BOARD_SEPOLICY_DIRS += device/hardkernel/rk356x/sepolicy_vendor
+TARGET_SYSTEM_PROP += device/hardkernel/rk356x/rk356x.prop
 # enable this for support f2fs with data partion
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
@@ -38,7 +38,7 @@ ifeq ($(HOST_OS),linux)
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.recovery.rk30board.rc:recovery/root/init.recovery.rk30board.rc \
+    $(LOCAL_PATH)/init.recovery.rk356x.rc:recovery/root/init.recovery.rk356x.rc \
     vendor/rockchip/common/bin/$(TARGET_ARCH)/busybox:recovery/root/sbin/busybox \
 
 PRODUCT_COPY_FILES += \

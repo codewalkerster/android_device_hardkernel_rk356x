@@ -13,10 +13,19 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+include device/hardkernel/rk356x/BoardConfig.mk
+BUILD_WITH_GO_OPT := false
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/odroidm1/odroidm1.mk \
+# AB image definition
+BOARD_USES_AB_IMAGE := false
+BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
 
-COMMON_LUNCH_CHOICES := \
-    odroidm1-userdebug \
-    odroidm1-user
+ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
+    include device/hardkernel/common/BoardConfig_AB.mk
+    TARGET_RECOVERY_FSTAB := device/hardkernel/rk356x/odroidm1/recovery.fstab_AB
+endif
+
+PRODUCT_UBOOT_CONFIG := rk3568
+PRODUCT_KERNEL_DTS := rk3568-evb1-ddr4-v10
+BOARD_CAMERA_SUPPORT_EXT := true
+BOARD_HS_ETHERNET := true
