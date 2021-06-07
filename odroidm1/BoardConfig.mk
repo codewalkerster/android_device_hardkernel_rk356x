@@ -25,6 +25,8 @@ ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
     TARGET_RECOVERY_FSTAB := device/hardkernel/rk356x/odroidm1/recovery.fstab_AB
 endif
 
+BOARD_HAVE_ON_BOARD_BLUETOOTH := false
+
 PRODUCT_UBOOT_CONFIG := rk3568
 PRODUCT_KERNEL_DTS := rk3568-evb1-ddr4-v10
 BOARD_CAMERA_SUPPORT_EXT := true
