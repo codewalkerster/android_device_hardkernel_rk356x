@@ -38,7 +38,7 @@ ifeq ($(HOST_OS),linux)
 endif
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/init.recovery.rk356x.rc:recovery/root/init.recovery.rk356x.rc \
+    $(LOCAL_PATH)/init.recovery.rk356x.rc:recovery/root/init.recovery.odroid.rc \
     vendor/rockchip/common/bin/$(TARGET_ARCH)/busybox:recovery/root/sbin/busybox \
 
 PRODUCT_COPY_FILES += \
