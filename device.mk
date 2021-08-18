@@ -29,7 +29,7 @@ TARGET_SYSTEM_PROP += device/hardkernel/rk356x/rk356x.prop
 BOARD_USERDATAIMAGE_FILE_SYSTEM_TYPE := f2fs
 
 # used for fstab_generator, sdmmc controller address
-PRODUCT_BOOT_DEVICE := fe310000.sdhci,fe330000.nandc
+PRODUCT_BOOT_DEVICE := fe310000.sdhci,fe2b0000.dwmmc
 
 # This ensures the needed build tools are available.
 # TODO: make non-linux builds happy with external/f2fs-tool; system/extras/f2fs_utils
