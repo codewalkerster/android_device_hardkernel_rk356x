@@ -18,5 +18,6 @@ PRODUCT_MAKEFILES := \
     $(LOCAL_DIR)/odroidm1/odroidm1.mk \
 
 COMMON_LUNCH_CHOICES := \
+    odroidm1-eng \
     odroidm1-userdebug \
     odroidm1-user
