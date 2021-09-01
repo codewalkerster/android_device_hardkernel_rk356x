@@ -105,3 +105,8 @@ PRODUCT_PACKAGES += \
 	rkaiq_3A_server
 PRODUCT_COPY_FILES += \
 	external/camera_engine_rkaiq/rkisp2x_tuner/reset_camera.sh:$(TARGET_COPY_OUT_VENDOR)/etc/camera/reset_camera.sh
+
+ifneq ("$(wildcard vendor/opengapps/build/opengapps-packages.mk)","")
+    GAPPS_VARIANT := mini
+    $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
+endif
