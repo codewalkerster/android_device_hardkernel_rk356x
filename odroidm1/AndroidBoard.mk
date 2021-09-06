@@ -5,3 +5,6 @@
 -include device/hardkernel/common/build/rockchip/RebuildDtboImg.mk
 # generate parameter.txt for device
 -include device/hardkernel/common/build/rockchip/RebuildParameter.mk
+
+# generate boot.cmd for device
+-include device/hardkernel/common/build/hardkernel/RebuildBootScript.mk
