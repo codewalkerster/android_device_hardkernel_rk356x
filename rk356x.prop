@@ -1,4 +1,3 @@
 ro.vendor.rk_sdk=1
 ro.kernel.android.gps=ttyACM
 ro.gps.id.vendor=1546
-feature.disable_bt=true
