@@ -50,3 +50,10 @@ PRODUCT_PROPERTY_OVERRIDES += persist.bt.power.down=true
 # Set HDMI as primary display
 #
 PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.primary=HDMIA
+
+#
+# ODROID-M1 Files
+#
+
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/files/env.ini.template:$(TARGET_COPY_OUT_VENDOR)/etc/env.ini.template \

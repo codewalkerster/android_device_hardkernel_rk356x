@@ -1,0 +1,7 @@
+#!/bin/sh
+if [ -e "/fat/env.ini" ]
+then
+    break
+else
+    cp /vendor/etc/env.ini.template /fat/env.ini
+fi
