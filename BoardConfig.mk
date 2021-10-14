@@ -18,7 +18,9 @@ TARGET_2ND_CPU_ABI2 := armeabi
 TARGET_2ND_CPU_VARIANT := cortex-a55
 
 TARGET_PREBUILT_KERNEL := kernel/arch/arm64/boot/Image
-BOARD_PREBUILT_DTBIMAGE_DIR := kernel/arch/arm64/boot/dts/rockchip
+ifeq ($(strip $(BOARD_INCLUDE_DTB_IN_BOOTIMG)), true)
+BOARD_PREBUILT_DTBIMAGE_DIR ?= kernel/arch/arm64/boot/dts/rockchip
+endif
 
 PRODUCT_UBOOT_CONFIG ?= rk3568
 PRODUCT_KERNEL_ARCH ?= arm64
