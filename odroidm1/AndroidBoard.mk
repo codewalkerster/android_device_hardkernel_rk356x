@@ -9,5 +9,5 @@
 # generate boot.cmd for device
 -include device/hardkernel/common/build/hardkernel/RebuildBootScript.mk
 
-# generate dtb image for device
--include device/hardkernel/common/build/hardkernel/BuildDtbImg.mk
+# generate fat image for device
+-include device/hardkernel/common/build/hardkernel/BuildFatImg.mk
