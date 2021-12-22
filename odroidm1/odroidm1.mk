@@ -48,9 +48,10 @@ PRODUCT_PROPERTY_OVERRIDES += persist.wifi.sleep.delay.ms=0
 PRODUCT_PROPERTY_OVERRIDES += persist.bt.power.down=false
 
 #
-# Set HDMI as primary display
+# Set the hwc display target
 #
-PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.primary=HDMIA
+PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.primary=DSI
+PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=HDMI-A,TV
 
 #
 # ODROID-M1 Files
