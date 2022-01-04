@@ -10,5 +10,5 @@ heartbeat="1"
 overlays="i2c0 uart0 spi0"
 overlays_resize=16384
 
-[hj080be31ia1]
+[display-vu8m]
 lcd_density=210

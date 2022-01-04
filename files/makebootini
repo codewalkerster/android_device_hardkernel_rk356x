@@ -1,7 +1,7 @@
 #!/bin/sh
-if [ -e "/fat/env.ini" ]
+if [ -e "/fat/config.ini" ]
 then
     break
 else
-    cp /vendor/etc/env.ini.template /fat/env.ini
+    cp /vendor/etc/config.ini.template /fat/config.ini
 fi

@@ -58,4 +58,4 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=HDMI-A,TV
 #
 
 PRODUCT_COPY_FILES += \
-    $(LOCAL_PATH)/files/env.ini.template:$(TARGET_COPY_OUT_VENDOR)/etc/env.ini.template \
+    $(LOCAL_PATH)/files/config.ini.template:$(TARGET_COPY_OUT_VENDOR)/etc/config.ini.template \
