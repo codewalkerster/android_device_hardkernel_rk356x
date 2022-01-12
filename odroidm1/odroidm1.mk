@@ -17,7 +17,7 @@
 # First lunching is R, api_level is 30
 PRODUCT_SHIPPING_API_LEVEL := 30
 PRODUCT_DTB_TARGET := kernel/arch/arm64/boot/dts/rockchip/rk3568-odroid-m1.dtb
-PRODUCT_DTBO_TARGET := kernel/arch/arm64/boot/dts/rockchip/overlays/odroid-m1/*.dtbo
+PRODUCT_DTBO_TARGET := kernel/arch/arm64/boot/dts/rockchip/overlays/odroidm1/*.dtbo
 PRODUCT_SDMMC_DEVICE := fe2b0000.dwmmc
 
 include device/hardkernel/common/build/rockchip/DynamicPartitions.mk
