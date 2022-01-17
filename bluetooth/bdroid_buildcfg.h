@@ -21,5 +21,8 @@
 #define BTA_DM_COD {0x1A, 0x01, 0x10}
 #define BLE_PRIVACY_SPT FALSE
 
-#endif
+/* Odroid custom option */
+#define SUPERVISION_TIMEOUT FALSE
+#define BLE_ADV_FILTER FALSE
 
+#endif
