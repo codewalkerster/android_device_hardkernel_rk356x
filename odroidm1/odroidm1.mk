@@ -59,3 +59,6 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=HDMI-A,TV
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/files/config.ini.template:$(TARGET_COPY_OUT_VENDOR)/etc/config.ini.template \
+
+PRODUCT_PACKAGES += \
+    AndroidTerm
