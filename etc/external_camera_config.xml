@@ -7,7 +7,7 @@
     <!-- See ExternalCameraUtils.cpp for default values of Device configurations below-->
     <Device>
         <!-- Max JPEG buffer size in bytes-->
-        <MaxJpegBufferSize  bytes="3145728"/>  <!-- 3MB (~= 1080p YUV420) -->
+        <MaxJpegBufferSize  bytes="18495360"/>  <!-- 17MB (~= 4056*3040 YUV420) -->
         <!-- Size of v4l2 buffer queue when streaming >= 30fps -->
         <!-- Larger value: more request can be cached pipeline (less janky) -->
         <!-- Smaller value: use less memory -->
@@ -64,6 +64,8 @@
             <Limit  width="2592" height="1944" fpsBound="15.0" />
             <Limit  width="2592" height="1944" fpsBound="10.0" />
             <Limit  width="2592" height="1944" fpsBound="5.0" />
+            <Limit  width="4056" height="3040" fpsBound="10.0" />
+            <Limit  width="4056" height="3040" fpsBound="5.0" />
             <!-- image size larger than the last entry will not be supported-->
         </FpsList>
         <!-- orientation -->
