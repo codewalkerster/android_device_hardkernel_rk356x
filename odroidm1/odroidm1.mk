@@ -62,11 +62,13 @@ PRODUCT_COPY_FILES += \
 
 PRODUCT_PACKAGES += \
     AndroidTerm \
+
+ifneq (,$(filter userdebug eng, $(TARGET_BUILD_VARIANT)))
+PRODUCT_PACKAGES += \
     SprUsr
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/../../proprietary/bin/phh-su:$(TARGET_COPY_OUT_SYSTEM)/bin/phh-su \
     $(LOCAL_PATH)/../../proprietary/bin/su:$(TARGET_COPY_OUT_SYSTEM)/bin/su \
     $(LOCAL_PATH)/../../proprietary/etc/init/su.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/su.rc
-
-
+endif
