@@ -5,3 +5,10 @@ then
 else
     cp /vendor/etc/config.ini.template /fat/config.ini
 fi
+
+if [ -e "/fat/boot.scr" ]
+then
+    break
+else
+    cp /vendor/etc/boot.scr /fat/boot.scr
+fi
