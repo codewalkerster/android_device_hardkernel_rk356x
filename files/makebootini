@@ -12,3 +12,12 @@ then
 else
     cp /vendor/etc/boot.scr /fat/boot.scr
 fi
+
+# we need a few secconds for access /storage/emulated/
+sleep 5
+
+if [ -e "/storage/emulated/0/.config.ini.backup" ]
+then
+    mv /storage/emulated/0/.config.ini.backup /fat/config.ini
+    svc power reboot
+fi
