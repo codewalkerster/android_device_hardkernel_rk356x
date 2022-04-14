@@ -1,8 +1,22 @@
 [generic]
+###########################
+# Max CPU frequency sets
+# 408000 600000 816000 1104000 1416000 1608000 1800000 1992000
 cpu_max_freq="1992000"
+
+###########################
+# Available CPU governors
+# conservative ondemand userspace powersave interactive performance schedutil
 cpu_governor="performance"
 
+###########################
+# Max GPU frequency sets
+# 800000000 700000000 600000000 400000000 300000000 200000000
 gpu_max_freq="800000000"
+
+###########################
+# Available GPU governors
+# dmc_ondemand venc_ondemand userspace powersave performance simple_ondemand
 gpu_governor="performance"
 
 heartbeat="1"
