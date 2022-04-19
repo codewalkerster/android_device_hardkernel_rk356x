@@ -24,6 +24,9 @@ heartbeat="1"
 overlays="i2c0 uart0 spi0"
 overlays_resize=16384
 
+###########################
+# ignore hpd
+# user_def_args="disablehpd=true"
 user_def_args=""
 
 [display_vu8m]
