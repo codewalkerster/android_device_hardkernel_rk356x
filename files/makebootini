@@ -13,6 +13,24 @@ else
     cp /vendor/etc/boot.scr /fat/boot.scr
 fi
 
+# automaticall change density for 4K UI
+CHANGED_RESOLUTION=`getprop persist.changed.resolution`
+RESOLUTION=`wm size`
+
+if [[ ( $CHANGED_RESOLUTION = "true" && $RESOLUTION = "Physical size: 3840x2160" ) ]];
+then
+    echo "3840"
+    wm density 360
+    setprop persist.changed.resolution false
+fi
+
+if [[ ( $CHANGED_RESOLUTION == "true" && $RESOLUTION = "Physical size: 1920x1080" ) ]];
+then
+    echo "1920"
+    wm density 240
+    setprop persist.changed.resolution false
+fi
+
 # we need a few secconds for access /storage/emulated/
 sleep 5
 
