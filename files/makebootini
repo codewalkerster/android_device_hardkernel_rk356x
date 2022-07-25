@@ -1,14 +1,14 @@
 #!/bin/sh
-if [ -e "/fat/config.ini" ]
+if [ -e "/fat/config.ini" ];
 then
-    break
+    echo "config.ini exist"
 else
     cp /vendor/etc/config.ini.template /fat/config.ini
 fi
 
-if [ -e "/fat/boot.scr" ]
+if [ -e "/fat/boot.scr" ];
 then
-    break
+    echo "boot.scr exist"
 else
     cp /vendor/etc/boot.scr /fat/boot.scr
 fi
@@ -16,7 +16,7 @@ fi
 # we need a few secconds for access /storage/emulated/
 sleep 5
 
-if [ -e "/storage/emulated/0/.config.ini.backup" ]
+if [ -e "/storage/emulated/0/.config.ini.backup" ];
 then
     mv /storage/emulated/0/.config.ini.backup /fat/config.ini
     svc power reboot
