@@ -54,6 +54,7 @@ PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.primary=DSI
 PRODUCT_PROPERTY_OVERRIDES += vendor.hwc.device.extend=HDMI-A,TV
 
 PRODUCT_PROPERTY_OVERRIDES += persist.framebuffer.support4kUI=false
+PRODUCT_PROPERTY_OVERRIDES += persist.changed.resolution=false
 
 #
 # ODROID-M1 Files
