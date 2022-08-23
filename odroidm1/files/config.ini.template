@@ -29,6 +29,10 @@ overlays_resize=16384
 # user_def_args="disablehpd=true"
 
 ###########################
+# Disable VU7
+# user_def_args="disable_vu7=true"
+
+###########################
 # vu8m orientation
 # The default orientation is portrait,
 # if you want to use as landscape, add this.
