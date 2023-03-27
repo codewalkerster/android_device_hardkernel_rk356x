@@ -38,6 +38,11 @@ overlays_resize=16384
 # if you want to use as landscape, add this.
 # user_def_args="orientation=landscape"
 
+###########################
+# flipped touch screen x,y
+# user_def_args="touch_flip_x=false"
+# user_def_args="touch_flip_y=false"
+
 user_def_args=""
 
 [display_vu8m]
