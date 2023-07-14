@@ -124,7 +124,7 @@ endif
 
 
 ifneq ("$(wildcard vendor/opengapps/build/opengapps-packages.mk)","")
-    GAPPS_VARIANT := mini
+    GAPPS_VARIANT := micro
     $(call inherit-product, vendor/opengapps/build/opengapps-packages.mk)
 endif
 
