@@ -13,15 +13,22 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 #
+include device/hardkernel/rk356x/BoardConfig.mk
+BUILD_WITH_GO_OPT := false
 
-PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/odroidm1/odroidm1.mk \
-    $(LOCAL_DIR)/odroidm1s/odroidm1s.mk \
+# AB image definition
+BOARD_USES_AB_IMAGE := false
+BOARD_ROCKCHIP_VIRTUAL_AB_ENABLE := false
 
-COMMON_LUNCH_CHOICES := \
-    odroidm1-eng \
-    odroidm1-userdebug \
-    odroidm1-user \
-    odroidm1s-eng \
-    odroidm1s-userdebug \
-    odroidm1s-user
+ifeq ($(strip $(BOARD_USES_AB_IMAGE)), true)
+    include device/hardkernel/common/BoardConfig_AB.mk
+    TARGET_RECOVERY_FSTAB := device/hardkernel/rk356x/odroidm1s/recovery.fstab_AB
+endif
+
+BOARD_HAVE_ON_BOARD_BLUETOOTH := false
+
+PRODUCT_UBOOT_CONFIG := odroid_rk3566
+PRODUCT_KERNEL_DTS := rk3566-odroid-m1s
+BOARD_CAMERA_SUPPORT_EXT := true
+BOARD_HS_ETHERNET := true
+PRODUCT_KERNEL_CONFIG += odroidm1s.config
