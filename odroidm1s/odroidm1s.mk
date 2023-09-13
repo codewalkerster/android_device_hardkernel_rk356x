@@ -75,3 +75,8 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/../../proprietary/bin/su:$(TARGET_COPY_OUT_SYSTEM)/bin/su \
     $(LOCAL_PATH)/../../proprietary/etc/init/su.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/su.rc
 endif
+
+# For UPS
+PRODUCT_COPY_FILES += \
+    $(LOCAL_PATH)/files/check_ups.sh:$(TARGET_COPY_OUT_VENDOR)/bin/check_ups.sh \
+    $(LOCAL_PATH)/init.odroidm1s.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.odroidm1s.rc
