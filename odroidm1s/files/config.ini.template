@@ -43,6 +43,10 @@ overlays_resize=16384
 # user_def_args="touch_flip_x=false"
 # user_def_args="touch_flip_y=false"
 
+###########################
+# test mt screen
+# user_def_args="test_mt_vid="0000" test_mt_pid="0000""
+
 user_def_args=""
 
 [display_vu8m]
