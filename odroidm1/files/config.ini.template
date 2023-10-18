@@ -47,6 +47,10 @@ overlays_resize=16384
 # test mt screen
 # user_def_args="test_mt_vid="0000" test_mt_pid="0000""
 
+###########################
+# Prevent sleep
+# user_def_args="prevent_sleep=true"
+
 user_def_args=""
 
 [display_vu8m]
