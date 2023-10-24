@@ -2,7 +2,7 @@
 ###########################
 # Max CPU frequency sets
 # 408 600 816 1104 1416 1608 1800 1992
-cpu_max_freq="1992"
+cpu_max_freq="1800"
 
 ###########################
 # Available CPU governors
