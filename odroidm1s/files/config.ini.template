@@ -33,7 +33,7 @@ overlays_resize=16384
 # user_def_args="disable_vu7=true"
 
 ###########################
-# vu8m orientation
+# vu8s orientation
 # The default orientation is portrait,
 # if you want to use as landscape, add this.
 # user_def_args="orientation=landscape"
@@ -49,5 +49,5 @@ overlays_resize=16384
 
 user_def_args=""
 
-[display_vu8m]
+[display_vu8s]
 lcd_density=210
