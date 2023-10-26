@@ -34,9 +34,25 @@ overlays_resize=16384
 
 ###########################
 # vu8s orientation
-# The default orientation is portrait,
-# if you want to use as landscape, add this.
-# user_def_args="orientation=landscape"
+# ex) defualt portrait
+# The screen is portrait and the HDMI port is to the left of screen.
+# ro.surface_flinger.primary_display_orientation=ORIENTATION_0
+# user_def_args="orientation=0"
+#
+# ex) default landscape
+# The screen is landscape and the HDMI port is to the top of screen.
+# ro.surface_flinger.primary_display_orientation=ORIENTATION_90
+# user_def_args="orientation=3"
+#
+# ex) reverse portrait
+# The screen is portrait and the HDMI port is to the right of screen.
+# ro.surface_flinger.primary_display_orientation=ORIENTATION_180
+# user_def_args="orientation=4"
+#
+# ex) reverse landscape
+# The screen is landscape and the HDMI port is to the bottom of screen.
+# ro.surface_flinger.primary_display_orientation=ORIENTATION_270
+# user_def_args="orientation=5"
 
 ###########################
 # flipped touch screen x,y
