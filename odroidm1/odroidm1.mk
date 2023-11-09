@@ -75,3 +75,14 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/../../proprietary/bin/su:$(TARGET_COPY_OUT_SYSTEM)/bin/su \
     $(LOCAL_PATH)/../../proprietary/etc/init/su.rc:$(TARGET_COPY_OUT_SYSTEM)/etc/init/su.rc
 endif
+
+ifeq ($(TARGET_BUILD_VARIANT),userdebug)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.url.official=https://dn.odroid.com/RK3568/ODROID-M1/Android/11/userdebug/ \
+    ro.url.mirror=https://www.odroid.in/mirror/dn.odroid.com/RK3568/ODROID-M1/Android/11/userdebug/
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.url.official=https://dn.odroid.com/RK3568/ODROID-M1/Android/11/ \
+    ro.url.mirror=https://www.odroid.in/mirror/dn.odroid.com/RK3568/ODROID-M1/Android/11/
+endif
+

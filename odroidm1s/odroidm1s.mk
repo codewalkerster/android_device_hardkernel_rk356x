@@ -81,3 +81,14 @@ endif
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/files/check_ups.sh:$(TARGET_COPY_OUT_VENDOR)/bin/check_ups.sh \
     $(LOCAL_PATH)/init.odroidm1s.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/hw/init.odroidm1s.rc
+
+ifeq ($(TARGET_BUILD_VARIANT),userdebug)
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.url.official=https://dn.odroid.com/RK3566/ODROID-M1S/Android/11/userdebug/ \
+    ro.url.mirror=https://www.odroid.in/mirror/dn.odroid.com/RK3566/ODROID-M1S/Android/11/userdebug/
+else
+PRODUCT_PROPERTY_OVERRIDES += \
+    ro.url.official=https://dn.odroid.com/RK3566/ODROID-M1S/Android/11/ \
+    ro.url.mirror=https://www.odroid.in/mirror/dn.odroid.com/RK3566/ODROID-M1S/Android/11/
+endif
+
