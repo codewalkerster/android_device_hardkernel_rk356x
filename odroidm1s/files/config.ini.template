@@ -71,3 +71,6 @@ user_def_args=""
 
 [display_vu8s]
 lcd_density=210
+
+[display_vu5s]
+lcd_density=180
