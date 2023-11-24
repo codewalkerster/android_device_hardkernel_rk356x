@@ -36,6 +36,7 @@ sleep 5
 
 if [ -e "/storage/emulated/0/.config.ini.backup" ];
 then
+    mv /storage/emulated/0/edid /fat/
     mv /storage/emulated/0/.config.ini.backup /fat/config.ini
     svc power reboot
 fi
