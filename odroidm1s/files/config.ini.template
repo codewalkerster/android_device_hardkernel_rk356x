@@ -67,6 +67,10 @@ overlays_resize=16384
 # Prevent sleep
 # user_def_args="prevent_sleep=true"
 
+###########################
+# Apply custom edid
+# user_def_args="drm.edid_firmware=HDMI-A-1:edid/edid.bin"
+
 user_def_args=""
 
 [display_vu8s]
