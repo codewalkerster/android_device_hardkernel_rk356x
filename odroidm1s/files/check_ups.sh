@@ -222,7 +222,7 @@ function check_ups_status {
 			else
 				echo "------------------------------------------------------------"
 				echo "UPS Battery Volt : ${UPS_BATTERY_VOLT} mV"
-				echo "UPS Battery Volt is lower then ${CONFIG_POWEROFF_BATTERY_LEVEL} mV"
+				echo "UPS Battery Volt is lower than ${CONFIG_POWEROFF_BATTERY_LEVEL} mV"
 				echo "------------------------------------------------------------"
 			fi
 			system_poweroff
@@ -241,7 +241,7 @@ function check_ups_status {
 	if [ ${CONFIG_POWEROFF_BATTERY_LEVEL} -eq ${BATTERY_LEVEL_FULL} ]; then
 		echo "SYSTEM Power OFF : Detecting UPS battery discharge."
 	else
-		echo "SYSTEM Power OFF : UPS Battery Volt is lower then ${CONFIG_POWEROFF_BATTERY_LEVEL} mV"
+		echo "SYSTEM Power OFF : UPS Battery Volt is lower than ${CONFIG_POWEROFF_BATTERY_LEVEL} mV"
 	fi
 }
 
