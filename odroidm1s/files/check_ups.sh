@@ -27,10 +27,12 @@ BATTERY_LEVEL_0mV="0"
 
 #/*---------------------------------------------------------------------------*/
 #/* Set battery level for system power off */
-#/* BATERRY_LEVEL_FULL : Power off when battery discharge condition detected. */
+#/* BATERRY_LEVEL_FULL   : Power off when battery discharge condition detected. */
+#/* BATERRY_LEVEL_3550mV : Power off when battery is below 3550mV.
+#/* (BATERRY_LEVEL_3550mV is maintained for 10 minutes at 5V/2A load.) */
 #/*---------------------------------------------------------------------------*/
-CONFIG_POWEROFF_BATTERY_LEVEL=${BATTERY_LEVEL_FULL}
-# CONFIG_POWEROFF_BATTERY_LEVEL=${BATTERY_LEVEL_3900mV}
+# CONFIG_POWEROFF_BATTERY_LEVEL=${BATTERY_LEVEL_FULL}
+CONFIG_POWEROFF_BATTERY_LEVEL=${BATTERY_LEVEL_3550mV}
 
 #/*---------------------------------------------------------------------------*/
 #/* Set battery level for system power on */
