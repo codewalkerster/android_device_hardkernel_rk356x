@@ -86,3 +86,4 @@ PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.mirror=https://www.odroid.in/mirror/dn.odroid.com/RK3568/ODROID-M1/Android/11/
 endif
 
+$(call inherit-product, device/hardkernel/proprietary/proprietary.mk)
