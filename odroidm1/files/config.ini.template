@@ -21,7 +21,7 @@ gpu_governor="performance"
 
 heartbeat="1"
 
-overlays="i2c0 i2c1 spi0 uart0 pwm_1 pwm_2 pwm_9"
+overlays="i2c0 i2c1 spi0 uart0"
 overlays_resize=16384
 
 ###########################
