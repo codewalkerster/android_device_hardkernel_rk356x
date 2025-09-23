@@ -83,3 +83,7 @@ PRODUCT_COPY_FILES += \
 PRODUCT_PROPERTY_OVERRIDES += \
     ro.url.official=https://dn.odroid.com/RK3566/ODROID-M1S/Android/13/ \
     ro.url.mirror=https://www.odroid.in/mirror/dn.odroid.com/RK3566/ODROID-M1S/Android/13/
+
+# for m1s native 4k UI
+PRODUCT_PROPERTY_OVERRIDES += \
+    persist.framebuffer.support4kUI=false
